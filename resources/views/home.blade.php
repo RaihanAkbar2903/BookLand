@@ -9,9 +9,12 @@
 <link href="css/output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-200">
+
+    <!-- NAVBAR -->
+
     <nav class="p-5 bg-teal-500 md:flex md:items-center md:justify-between">
         <div class="md:flex md:items-center md:justify-between">
-        <img src="img/logo.jpeg" alt="" width="100">
+        <img src="img/logo.png" alt="" width="100">
             <span class="text-2xl font-[Poppins] text-white">
                 BookLand
             </span>
@@ -38,6 +41,14 @@
             </li>
         </ul>
     </nav>
+
+    <!-- NAVBAR -->
+
+    <!-- Carousel -->
+
+    
+
+    <!-- Carousel -->
     
 </body>
 </html>
