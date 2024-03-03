@@ -6,13 +6,12 @@
     <title>Document</title>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
+<link href="css/output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-200">
     <nav class="p-5 bg-teal-500 md:flex md:items-center md:justify-between">
-        <div>
-
-        <img src="../" alt="">
+        <div class="md:flex md:items-center md:justify-between">
+        <img src="img/logo.jpeg" alt="" width="100">
             <span class="text-2xl font-[Poppins] text-white">
                 BookLand
             </span>
