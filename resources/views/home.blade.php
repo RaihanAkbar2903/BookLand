@@ -6,13 +6,13 @@
     <title>Document</title>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<link href="css/output.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-200">
+<body class="bg-white">
 
     <!-- NAVBAR -->
 
-    <nav class="p-5 bg-teal-500 md:flex md:items-center md:justify-between">
+    <nav class="p-5 bg-yellow-800 md:flex md:items-center md:justify-between">
         <div class="md:flex md:items-center md:justify-between">
         <img src="img/logo.png" alt="" width="100">
             <span class="text-2xl font-[Poppins] text-white">
@@ -21,7 +21,7 @@
         </div>
 </div>  
 <div>
-<select name="cars" class="bg-teal-500 text-white shadow mr-20 text-2xl font-[Poppins]">
+<select name="cars" class="bg-yellow-800 text-white shadow mr-20 text-2xl font-[Poppins]">
   <option value="volvo">Kategori</option>
   <option value="saab">Fiksi</option>
   <option value="mercedes">Non Fiksi</option>
