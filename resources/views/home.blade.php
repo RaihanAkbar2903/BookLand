@@ -8,47 +8,113 @@
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white">
+<body class="bg-slate-500">
 
     <!-- NAVBAR -->
 
-    <nav class="p-5 bg-yellow-800 md:flex md:items-center md:justify-between">
-        <div class="md:flex md:items-center md:justify-between">
-        <img src="img/logo.png" alt="" width="100">
-            <span class="text-2xl font-[Poppins] text-white">
-                BookLand
-            </span>
-        </div>
-</div>  
-<div>
-<select name="cars" class="bg-yellow-800 text-white shadow mr-20 text-2xl font-[Poppins]">
-  <option value="volvo">Kategori</option>
-  <option value="saab">Fiksi</option>
-  <option value="mercedes">Non Fiksi</option>
-  <option value="audi">Majalah</option>
-  <option value="audi">Manga</option>
-</select>
-        <input type="search" name="" id="" placeholder="Cari Buku, Novel, Komik, Penulis " class="rounded-full px-5 py-5 w-96 bg-gray-200">
-        </div>
-        <ul class="md:flex md:items-center">
-            <li class="mx-4">
-                <a href="" class="text-xl text-white shadow hover:text-gray-600 duration-500 font-[Poppins]">MASUK</a>
-            </li>
-            <li class="mx-4">
-            <a href=""><ion-icon name="bag-handle-outline" class="text-white shadow size-10"></ion-icon></a>
-            </li>
-            <li>
-            </li>
-        </ul>
-    </nav>
+    <nav class="bg-gradient-to-br from-stone-500 via-orange-200 to-slate-500 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="img/logo.png" class="h-8" alt="Flowbite Logo">
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">BookLand</span>
+  </a>
+  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+       <a href="login"><button type="button" class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-40% to-teal-900-500 to-90% bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Masuk</button></a>
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+    <select name="" id="" class="bg-transparent mr-5"> 
+      <option value="">KATEGORI</option>
+      <option value="">Fiksi</option>
+      <option value="">Non Fiksi</option>
+      <option value="">Manga</option>
+      <option value="">Manhwa</option>
+    </select>
+    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li>
+        <input type="search" class="rounded-lg w-72" placeholder="Cari Buku, Novel, Komik, Penulis ">
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
 
     <!-- NAVBAR -->
 
     <!-- Carousel -->
 
-    
-
     <!-- Carousel -->
+
+
+    <!-- Card -->
+<div class="md:flex md:items-center mt-20 mb-1">
+<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 shadow">
+    <a href="#">
+        <img class="rounded-t-lg h-[500px] w-96" src="img/card.jpeg" alt="">
+    </a>
+    <div class="py-2 flex">
+        <a href="#" class="p-[126.5px] py-2 justify-items-center flex font-medium text-white bg-blue-700 hover:bg-blue-800 rounded-b-lg">
+            Lihat Semua
+        </a>
+    </div>
+</div>
+
+<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative absolute bottom-[16px] rounded-lg">
+    <a href="#">
+        <img class="rounded-t-lg h-96 w-96" src="img/card1.jpeg" alt="">
+    </a>
+    <div class="py-2 bg-white rounded-b-lg pl-2">
+        <p class="text-gray-600 pt-2">HALLO BAGAS</p><br>
+        <p>Nanti Juga Sembuh Sendiri</p>
+        <p class="text-blue-700 font-bold">Rp 80.000</p>
+    </div>
+    </a>
+</div>
+
+<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative absolute bottom-[16px] rounded-lg">
+    <a href="#">
+        <img class="rounded-t-lg h-96 w-96" src="img/card1.jpeg" alt="">
+    </a>
+    <div class="py-2 bg-white rounded-b-lg pl-2">
+        <p class="text-gray-600 pt-2">HALLO BAGAS</p><br>
+        <p>Nanti Juga Sembuh Sendiri</p>
+        <p class="text-blue-700 font-bold">Rp 80.000</p>
+    </div>
+    </a>
+</div>
+
+<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative absolute bottom-[16px] rounded-lg">
+    <a href="#">
+        <img class="rounded-t-lg h-96 w-96" src="img/card1.jpeg" alt="">
+    </a>
+    <div class="py-2 bg-white rounded-b-lg pl-2">
+        <p class="text-gray-600 pt-2">HALLO BAGAS</p><br>
+        <p>Nanti Juga Sembuh Sendiri</p>
+        <p class="text-blue-700 font-bold">Rp 80.000</p>
+    </div>
+    </a>
+</div>
+
+<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative absolute bottom-[16px] rounded-lg">
+    <a href="#">
+        <img class="rounded-t-lg h-96 w-96" src="img/card1.jpeg" alt="">
+    </a>
+    <div class="py-2 bg-white rounded-b-lg pl-2">
+        <p class="text-gray-600 pt-2">HALLO BAGAS</p><br>
+        <p>Nanti Juga Sembuh Sendiri</p>
+        <p class="text-blue-700 font-bold">Rp 80.000</p>
+    </div>
+    </a>
+</div>
+<hr class="my-20 border-t-4"/>
+</div>
+<hr class="my-20 border-t-4"/>
+    <!-- Card -->
     
 </body>
 </html>
