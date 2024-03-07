@@ -49,6 +49,47 @@
     <!-- Carousel -->
 
     <!-- Carousel -->
+ 
+<div class="max-w-2xl mx-auto">
+  <div id="default-carousel" class="relative" data-carousel="static">
+    <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+        
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2
+            -translate-y-1/2 sm:text-3xl">
+            Primer slide
+            </span>
+            <img src="img/carousel1.png" alt=""
+              class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+
+        </div>
+
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+         <img src="img/carousel2.png" alt=""
+           class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" >
+        </div>
+
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+         <img src="img/carousel1.png" alt=""
+           class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" >
+        </div>
+    </div>
+    <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+        <button class="w-3 h-3 rounded-full" aria-current="false" aria-label="slide 1" 
+        data-carousel-slide-to="0"></button>
+        <button class="w-3 h-3 rounded-full" aria-current="false" aria-label="slide 2" 
+        data-carousel-slide-to="1"></button>
+        
+
+    </div>
+
+  </div>
+
+ </div>
+
+    <!-- Carousel -->
+
+    <!-- Carousel -->
 
 
     <!-- Card -->
