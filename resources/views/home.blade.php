@@ -32,7 +32,7 @@
         </div>
         <ul class="md:flex md:items-center">
             <li class="mx-4">
-                <a href="" class="text-xl text-white shadow hover:text-gray-600 duration-500 font-[Poppins]">MASUK</a>
+                <a href="login" class="text-xl text-white shadow hover:text-gray-600 duration-500 font-[Poppins]">MASUK</a>
             </li>
             <li class="mx-4">
             <a href=""><ion-icon name="bag-handle-outline" class="text-white shadow size-10"></ion-icon></a>
@@ -47,23 +47,23 @@
     <!-- Carousel -->
  
 <!-- This is an example component -->
-<div class="max-w-full  ">
+<div class="max-w-full">
 
 	<div id="default-carousel" class="relative" data-carousel="static">
         <!-- Carousel wrapper -->
-        <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+        <div class="overflow-hidden relative h-96 rounded-lg sm:h-96 4xl:h-96 4xl:h-96">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-                <img src="img/carousel1.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                <img src="img/carousel1.jpeg" class=" absolute top-2/3 left-1/2 w-full  -translate-x-1/2 -translate-y-1/2" alt="...">
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="img/carousel2.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                <img src="img/carousel2.jpeg" class="block absolute top-2/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="img/carousel1.jpeg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                <img src="img/carousel1.jpeg" class="block absolute top-2/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
             </div>
         </div>
         <!-- Slider indicators -->
