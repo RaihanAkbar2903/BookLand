@@ -7,6 +7,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 </head>
 <body class="bg-stone-100">
 
@@ -15,13 +16,13 @@
     <nav class="p-5 bg-gradient-to-br from-stone-500 via-orange-200 to-slate-500 md:flex md:items-center md:justify-between">
         <div class="md:flex md:items-center md:justify-between">
         <img src="img/logo.png" alt="" width="100">
-            <span class="text-2xl font-[Poppins] text-white">
+            <span class="text-2xl font-[Poppins">
                 BookLand
             </span>
         </div>
 </div>  
 <div>
-<select name="cars" class="bg-orange-200 text-white shadow mr-20 text-2xl font-[Poppins]">
+<select name="cars" class="bg-transparent text-black mr-20 text-2xl font-[Poppins]">
   <option value="volvo">Kategori</option>
   <option value="saab">Fiksi</option>
   <option value="mercedes">Non Fiksi</option>
@@ -32,10 +33,10 @@
         </div>
         <ul class="md:flex md:items-center">
             <li class="mx-4">
-                <a href="login" class="text-xl text-white shadow hover:text-gray-600 duration-500 font-[Poppins]">MASUK</a>
+                <a href="login" class="text-xl hover:text-gray-600 duration-500 font-[Poppins]">MASUK</a>
             </li>
             <li class="mx-4">
-            <a href=""><ion-icon name="bag-handle-outline" class="text-white shadow size-10"></ion-icon></a>
+            <a href=""><ion-icon name="bag-handle-outline" class=" size-10"></ion-icon></a>
             </li>
             <li>
             </li>
@@ -45,13 +46,10 @@
     <!-- NAVBAR -->
 
     <!-- Carousel -->
- 
-<!-- This is an example component -->
 <div class="max-w-full">
-
 	<div id="default-carousel" class="relative" data-carousel="static">
         <!-- Carousel wrapper -->
-        <div class="overflow-hidden relative h-96 rounded-lg sm:h-96 4xl:h-96 4xl:h-96">
+        <div class="overflow-hidden relative h-[730.5px] ">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
@@ -76,26 +74,22 @@
         <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
             <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                 <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                <span class="hidden">Previous</span>
             </span>
         </button>
         <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
             <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                 <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                <span class="hidden">Next</span>
             </span>
         </button>
     </div>
-    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 </div>
-
     <!-- Carousel -->
 
 
 
     <!-- Card -->
-<div class="md:flex md:items-center mt-10 mb-1">
-<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 shadow">
+<div class="md:flex md:items-center mt-10 mb-10">
+<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-5">
     <a href="#">
         <img class="rounded-t-lg h-[500px] w-96" src="img/card.jpeg" alt="">
     </a>
@@ -106,7 +100,7 @@
     </div>
 </div>
 
-<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative absolute bottom-[16px] rounded-lg">
+<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative absolute bottom-[26px] rounded-lg">
     <a href="#">
         <img class="rounded-t-lg h-96 w-96" src="img/card1.jpeg" alt="">
     </a>
@@ -118,7 +112,7 @@
     </a>
 </div>
 
-<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative absolute bottom-[16px] rounded-lg">
+<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative absolute bottom-[26px] rounded-lg">
     <a href="#">
         <img class="rounded-t-lg h-96 w-96" src="img/card1.jpeg" alt="">
     </a>
@@ -130,7 +124,7 @@
     </a>
 </div>
 
-<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative absolute bottom-[16px] rounded-lg">
+<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative absolute bottom-[26px] rounded-lg">
     <a href="#">
         <img class="rounded-t-lg h-96 w-96" src="img/card1.jpeg" alt="">
     </a>
@@ -142,7 +136,7 @@
     </a>
 </div>
 
-<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative absolute bottom-[16px] rounded-lg">
+<div class="max-w-sm border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5 relative absolute bottom-[26px] rounded-lg">
     <a href="#">
         <img class="rounded-t-lg h-96 w-96" src="img/card1.jpeg" alt="">
     </a>
@@ -155,6 +149,8 @@
 </div>
 </div>
     <!-- Card -->
+
+    
 
     <!-- Footer -->
     <div>

@@ -12,10 +12,10 @@
 <div class="bg-gray-100 flex justify-center items-center h-screen">
 
 <div class="w-1/2 h-screen hidden lg:block">
-  <img src="img/card1.jpeg" alt="Placeholder Image" class="object-cover w-full h-full">
+  <img src="img/buku.jpg" alt="Placeholder Image" class="object-fill w-full h-full relative">
 </div>
 
-<div class="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
+<div class="lg:p-[345px] md:p-52 sm:20 p-8 w-full lg:w-1/2">
   <h1 class="text-2xl font-semibold mb-4">Login</h1>
   <form action="#" method="POST">
 
