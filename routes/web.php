@@ -23,3 +23,5 @@ Route::get('/contact',[HomeController::class, 'contact']);
 Route::get('/login',[HomeController::class, 'login']);
 Route::get('/register',[HomeController::class, 'register']);
 Route::get('/item',[HomeController::class, 'item']);
+Route::get('/layouts/navbar',[HomeController::class, 'navbar']);
+Route::get('/layouts/carousel',[HomeController::class, 'carousel']);

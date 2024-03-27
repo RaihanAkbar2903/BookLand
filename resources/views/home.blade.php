@@ -7,83 +7,151 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 </head>
 <body class="bg-stone-100">
 
     <!-- NAVBAR -->
 
-    <nav class="p-5 bg-gradient-to-br from-stone-500 via-orange-200 to-slate-500 md:flex md:items-center md:justify-between">
-        <div class="md:flex md:items-center md:justify-between">
-        <img src="img/logo.png" alt="" width="100">
-            <span class="text-2xl font-[Poppins">
-                BookLand
-            </span>
+    <nav class="bg-gradient-to-br from-stone-500 via-orange-200 to-slate-500">
+    <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+        <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="../img/logo.png" alt="" width="100" class="h-14">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">BookLand</span>
+        </a>
+        <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
+            <a href="/login" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Login</a>
+            <a href="/register" class="text-grey bg-slate-500 hover:bg-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:bg-blue-600 dark:hover:bg-to-slate-500 focus:outline-none dark:focus:ring-blue-800">Sign up</a>
+            <button data-collapse-toggle="mega-menu" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-transparent focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+                
+            </button>
         </div>
-</div>  
-<div>
-<select name="cars" class="bg-transparent text-black mr-20 text-2xl font-[Poppins]">
-  <option value="volvo">Kategori</option>
-  <option value="saab">Fiksi</option>
-  <option value="mercedes">Non Fiksi</option>
-  <option value="audi">Majalah</option>
-  <option value="audi">Manga</option>
-</select>
-        <input type="search" name="" id="" placeholder="Cari Buku, Novel, Komik, Penulis " class="rounded-full px-5 py-5 w-96 bg-stone-100">
+        <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+            <ul class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+                <li>
+                    <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown" class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+                        Kategori<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg>
+                    </button>
+                    <div id="mega-menu-dropdown" class="absolute z-10 grid hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700">
+                        <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                            <ul class="space-y-4" aria-labelledby="mega-menu-dropdown-button">
+                                <li>
+                                    <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                        Library
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                        Resources
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                        Pro Version
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                            <ul class="space-y-4">
+                                <li>
+                                    <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                        Newsletter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                        Playground
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                        License
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-4">
+                            <ul class="space-y-4">
+                                <li>
+                                    <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                        Support Center
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                        Terms
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <input type="text" id="search-navbar" class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+            </ul>
         </div>
-        <ul class="md:flex md:items-center">
-            <li class="mx-4">
-                <a href="login" class="text-xl hover:text-gray-600 duration-500 font-[Poppins]">MASUK</a>
-            </li>
-            <li class="mx-4">
-            <a href=""><ion-icon name="bag-handle-outline" class=" size-10"></ion-icon></a>
-            </li>
-            <li>
-            </li>
-        </ul>
-    </nav>
+    </div>
+</nav>
 
     <!-- NAVBAR -->
 
     <!-- Carousel -->
-<div class="max-w-full">
-	<div id="default-carousel" class="relative" data-carousel="static">
-        <!-- Carousel wrapper -->
-        <div class="overflow-hidden relative h-[730.5px] ">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-                <img src="img/carousel1.jpeg" class=" absolute top-2/3 left-1/2 w-full  -translate-x-1/2 -translate-y-1/2" alt="...">
+	
+    @include('layouts/carousel')
+
+    <!-- Carousel -->
+
+    <!-- kategori -->
+
+<div class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-2xl font-bold mb-4">Kategori Buku</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="bg-white rounded-lg p-4 shadow">
+                <img src="https://via.placeholder.com/150" alt="Category" class="mb-2">
+                <h2 class="text-lg font-semibold">Fiksi</h2>
+                <p class="text-gray-500">Explore our collection of fictional books.</p>
             </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="img/carousel2.jpeg" class="block absolute top-2/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            <div class="bg-white rounded-lg p-4 shadow">
+                <img src="https://via.placeholder.com/150" alt="Category" class="mb-2">
+                <h2 class="text-lg font-semibold">Non-fiksi</h2>
+                <p class="text-gray-500">Discover our non-fiction books on various topics.</p>
             </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="img/carousel1.jpeg" class="block absolute top-2/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            <div class="bg-white rounded-lg p-4 shadow">
+                <img src="https://via.placeholder.com/150" alt="Category" class="mb-2">
+                <h2 class="text-lg font-semibold">Science Fiction</h2>
+                <p class="text-gray-500">Travel to distant galaxies with our science fiction collection.</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 shadow">
+                <img src="https://via.placeholder.com/150" alt="Category" class="mb-2">
+                <h2 class="text-lg font-semibold">Fantasy</h2>
+                <p class="text-gray-500">Immerse yourself in magical realms with our fantasy books.</p>
             </div>
         </div>
-        <!-- Slider indicators -->
-        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        </div>
-        <!-- Slider controls -->
-        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-            </span>
-        </button>
-        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-            </span>
-        </button>
     </div>
 </div>
-    <!-- Carousel -->
 
 
 
@@ -152,6 +220,8 @@
 
     
 
+    <!-- Footer -->
+    
     <!-- Footer -->
     <div>
     <footer class="bg-gradient-to-br from-stone-500 via-orange-200 to-slate-500">
@@ -283,7 +353,6 @@
 </div>
 </div>
 </footer>
-</div>
 
 <!-- footer -->
     

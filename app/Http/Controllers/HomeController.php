@@ -30,4 +30,15 @@ class HomeController extends Controller
     {
         return view('item');
     }
+    
+    public function navbar()
+    {
+        return view('layouts/navbar');
+    }
+
+    public function carousel()
+    {
+        return view('layouts/carousel');
+    }
+    
 }
